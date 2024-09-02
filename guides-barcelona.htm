@@ -1,0 +1,1189 @@
+<!DOCTYPE html><html lang="he" xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" class="medium-view">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=1024" />
+		<script>
+
+	function getReferrer(){
+		const d = new Date();
+		d.setTime(d.getTime() + (60 * 1000));
+		const expires = "expires=" + d.toGMTString();
+		const domain = "domain=" + location.host.substring(location.host.indexOf("."));
+		const referrer = "mako_referrer=" + (document.referrer || "empty");
+		document.cookie = referrer + ";" + expires + ";" + domain + ";path=/";
+	}	
+		
+	function getStatsParams(altUrl){
+		var params = '';
+		if (location.search && altUrl.indexOf('mako.')!=-1) {
+		    var parts = location.search.substring(1).split('&');	
+		    for (var i = 0; i < parts.length; i++) {
+		        var nv = parts[i].split('=');
+		        if (nv[0] && (nv[0] == 'sCh' || nv[0] == 'pId' || nv[0].toLowerCase() == 'partner' || nv[0].indexOf('utm') == 0)) {
+		              params += '&' + nv[0] +'='+ nv[1];
+		          }
+		    }
+		    if (params !== ''){
+		    	params = (altUrl.indexOf('?') !== altUrl.indexOf('&') ? '&' : '?') + params.substring(1);
+		    }
+		}
+		return params;
+	}
+		var agent = navigator.userAgent.toLowerCase();
+		var myUrl = window.location.href.toLowerCase();
+		var isSmartPhone = (agent.indexOf('ipad') == -1 && (agent.indexOf('iphone') != -1 || agent.indexOf('android') != -1 ) )
+		if(isSmartPhone){			
+			//var isTvbeeDomain = location.host.indexOf("tvbee.co.il") != -1;
+			var isSateliteDomain = location.host.indexOf("tvbee.co.il") != -1 || location.host.indexOf("www.n12")!= -1 || location.host.indexOf("tech12.co.il") != -1;
+			var altUrl="";
+			if(myUrl.indexOf(".mako") !== -1  || isSateliteDomain)
+			{
+					var mobileHostPrefix = isSateliteDomain ? 'm.' : 'mobile.';
+					var isValidUrl = new RegExp("^(http|https)\://.*$").test(altUrl);
+					if(altUrl.length && isValidUrl && (myUrl.toLowerCase().indexOf(altUrl.toLowerCase()) == -1)){
+						getReferrer();
+						var url=altUrl + getStatsParams(altUrl);
+						window.location=url;						
+					}else{
+						if(myUrl.indexOf("/mako-vod-help")===-1){
+							getReferrer();	
+							window.location = window.location.href.replace(location.host.split('.')[0]+'.', mobileHostPrefix);
+						}												
+					}
+			}
+		}
+		</script>
+<meta http-equiv="X-UA-Compatible" content="IE=8" >
+		<meta name="apple-itunes-app"
+		content="app-id=340173260, app-argument=mako://hp?utm_source=makoMobile&utm_medium=SmartAppBanner&utm_campaign=makoMobilePromo" />
+	<meta name="google-play-app"
+		content="app-id=com.goldtouch.mako, app-argument=mako://hp?utm_source=makoMobile&utm_medium=SmartAppBanner&utm_campaign=makoMobilePromo" />
+	<link rel="canonical" href="https://www.mako.co.il/travel-world/guides-barcelona" />
+	<link rel="alternate" media="handheld" href="https://mobile.mako.co.il/travel-world/guides-barcelona" />
+	<link rel="apple-touch-icon" href="//rcs.mako.co.il/images/apple-touch-icon.png" />
+		<link rel="shortcut icon" href="//rcs.mako.co.il/images/favicon.ico" />
+	<script type="application/ld+json">
+			{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "@id": "https://www.mako.co.il/travel-world/guides-barcelona",
+ "potentialAction": {"@type": "ViewAction"}
+}</script>
+	<meta name="description" content="ברצלונה במדריך ערוץ החופש של mako: המדריך המלא למטייל בברצלונה הכולל המלצות עדכניות על מלונות, מסעדות, אטרקציות, קניות והטיפים הכי שווים לטיול בברצלונה" />
+	<title>ברצלונה: המדריך המלא למטייל בברצלונה</title>
+	<meta property="og:title" content="ברצלונה: המדריך המלא למטייל בברצלונה" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://www.mako.co.il/travel-world/guides-barcelona" />
+	<meta property="og:image" content="https://img.mako.co.il/2014/12/23/barca.jpg" />
+	<meta property="og:site_name" content="mako" />
+	<meta property="fb:app_id" content="225736910835244" />
+	<meta property="og:description" content="ברצלונה במדריך ערוץ החופש של mako: המדריך המלא למטייל בברצלונה הכולל המלצות עדכניות על מלונות, מסעדות, אטרקציות, קניות והטיפים הכי שווים לטיול בברצלונה" />
+	<meta property="fb:pages" content="100462013796" />
+	<meta name="external_title" content="" />	
+	<script type="text/javascript">
+		var adsArea  = 'MAKOAREA=Subvertical';
+		var contentType = 'Subvertical';
+		var contentUsername = '';
+		function MAKO_SETTINGS() { 
+            return {
+                            'url' : "https://www.mako.co.il/travel-world/guides-barcelona",
+                            'type' : "article"
+            }
+		}
+	</script>
+	<link rel="image_src" href="https://img.mako.co.il/2014/12/23/barca.jpg" />
+	<!-- Menuitem:  / nTravel / nVerticalTravelGlobal / nSubVerticalGuides / nMadorGuides /   -->
+<!-- google plus 1 -->
+<script>
+	var vcmidOfContent = 'fae025e732e7f110VgnVCM2000002a0c10acRCRD';
+	var currentChannelId = 'fae025e732e7f110VgnVCM2000002a0c10acRCRD';
+	var mainChannelId = '888f9edb29436110VgnVCM1000005201000aRCRD';
+	var parentsChannels='fae025e732e7f110VgnVCM2000002a0c10acRCRD,6b7d25e732e7f110VgnVCM2000002a0c10acRCRD,379f9edb29436110VgnVCM1000005201000aRCRD,888f9edb29436110VgnVCM1000005201000aRCRD';
+	var isCM8 =  true;
+	var OB_ContextKeyValue = 'mako';
+	var OB_Platform = 'desktop';
+	
+	var domoPageView = '{"content_type":"channel","channel_id":"fae025e732e7f110VgnVCM2000002a0c10acRCRD","item_id":"fae025e732e7f110VgnVCM2000002a0c10acRCRD","is_blocked_content":{"israel":0,"international":0},"page_url":"https://www.mako.co.il/travel-world/guides-barcelona","channel_depth":4}';</script>
+<script src="https://rcs.mako.co.il/js/p13n_mako_v7.js"></script>
+<link href="https://rcs.mako.co.il/combined/HPbundle/neo-generic.css" rel="stylesheet" /><script>
+	var staticResourcesUriPrefix = 'https://rcs.mako.co.il';
+	var skinsUriPrefix = 'https://skn.mako.co.il';
+	var imagesUriPrefix = 'https://img.mako.co.il';
+	var usernameOnPage = null;
+	var jsChannelName = '';	
+  
+	function skinsUriPrefixFunc()	{
+		return skinsUriPrefix;
+	}
+	function imagesUriPrefixFunc()	{
+		return imagesUriPrefix;
+	}
+</script>
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script src="//rcs.mako.co.il/js/scripts/jquery-1.10.2.min.js"></script> 
+<script src="//rcs.mako.co.il/js/scripts/jquery-migrate-1.2.1.min.js"></script> 
+<script src="//rcs.mako.co.il/js/neo/jquery-ui.min.js"></script>
+<script src="https://rcs.mako.co.il/combined/HPbundle/neoPreBundle.js"></script>
+
+
+<link href="https://rcs.mako.co.il/css/newLobbyBundleV2.css" rel="stylesheet" /><script>
+			var todayDate = '02.09.24';
+		</script>
+		<script async src="https://tags.dxmdp.com/tags/36699dd9-d954-4d40-be6a-4bbfce1f3652/dmp-provider.js"></script>
+
+		<!-- header bidding -->
+		<script id="vad-hb-snippet" data-publisher="mako">var _0x2050=['type','head','unshift','document','src','pubads','refresh','//cdn.valuad.cloud/hb/','now','top','random','vad_timestamp','vad-hb-script','push','disableInitialLoad','text/javascript','_vadHb','vad_rollout','appendChild','googletag','cmd','data-publisher','getItem','mako'];(function(_0x2886b3,_0x205089){var _0x484819=function(_0x58ee27){while(--_0x58ee27){_0x2886b3['push'](_0x2886b3['shift']());}};_0x484819(++_0x205089);}(_0x2050,0x10e));var _0x4848=function(_0x2886b3,_0x205089){_0x2886b3=_0x2886b3-0x0;var _0x484819=_0x2050[_0x2886b3];return _0x484819;};(function(){function _0x3568dd(){var _0x30ccc2='mako';window['vadPubId']=_0x30ccc2;var _0x27906d=_0x4848('0x11');var _0x8194e4=_0x4848('0x6');var _0x51c654=Date[_0x4848('0x2')]();var _0x5b82be=window['top'][_0x4848('0x15')]['createElement']('script');_0x5b82be[_0x4848('0x12')]=_0x4848('0x9');_0x5b82be['setAttribute'](_0x4848('0xf'),_0x30ccc2);_0x5b82be['id']=_0x8194e4;_0x5b82be['async']=!![];var _0x3fbf1d=_0x51c654-_0x51c654%(0x15180*0x3e8);var _0x75f0e9=parseInt(localStorage[_0x4848('0x10')](_0x4848('0x5')),0xa)||_0x3fbf1d;_0x5b82be[_0x4848('0x16')]=_0x4848('0x1')+_0x27906d+'-prod.js'+'?timestamp='+(_0x3fbf1d>_0x75f0e9?_0x3fbf1d:_0x75f0e9);window[_0x4848('0x3')]['document'][_0x4848('0x13')][_0x4848('0xc')](_0x5b82be);}function _0x390dd0(){window['googletag']=window[_0x4848('0xd')]||{'cmd':[]};var _0x100c01=window[_0x4848('0xd')];_0x100c01[_0x4848('0xe')]=_0x100c01[_0x4848('0xe')]||[];if(_0x100c01[_0x4848('0xe')]['unshift']){_0x100c01[_0x4848('0xe')][_0x4848('0x14')](function(){_0x100c01['pubads']()[_0x4848('0x8')]();});}else{_0x100c01[_0x4848('0xe')][_0x4848('0x7')](function(){_0x100c01[_0x4848('0x17')]()['disableInitialLoad']();});}}function _0x4c363e(){window[_0x4848('0xd')]=window[_0x4848('0xd')]||{'cmd':[]};var _0x187965=window['googletag'];_0x187965[_0x4848('0xe')][_0x4848('0x7')](function(){if(!window[_0x4848('0xa')]){_0x187965[_0x4848('0x17')]()[_0x4848('0x0')]();}});}var _0x402ccc=parseFloat(localStorage['getItem'](_0x4848('0xb')))||0x1;if(Math[_0x4848('0x4')]()<=_0x402ccc){_0x390dd0();_0x3568dd();setTimeout(function(){_0x4c363e();},0xbb8);}}());</script>
+		
+		<!-- Vignette Application Portal 16.2 (build 849477) (JAR 16.2.cumulative 2018-06-06 12:54:12 build 866503) -->
+		<base target="_top" />
+		<script>var __uzdbm_1 = "4e7bdf67-bfa9-4cee-8d85-cc325e53c47e";var __uzdbm_2 = "N2MyZDI0MGEtY2oyai00MjU0LTlkZGYtNDA5OTBjZTg5OGE3JDE3Ni4xMi4xOTEuMTQ=";var __uzdbm_3 = "7f6000cc6637cf-fab3-4b82-ae3b-f954aa6f495817198480514335428665994-e20a4fa92557567f22";var __uzdbm_4 = "false";var __uzdbm_5 = "uzmx";var __uzdbm_6 = "7f9000a227f9b5-1cc0-4e2f-be33-5e6c4a87e58d2-17198480514335428665994-6c66c5c3dc0aea0022";var __uzdbm_7 = "mako.co.il";</script> <script>   (function (w, d, e, u, c, g, a, b) {     w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {       ss_cid: c,       domain_info: "auto",     };     w[g] = function (i, j) {       w["SSJSConnectorObj"][i] = j;     };     a = d.createElement(e);     a.async = true;     if (       navigator.userAgent.indexOf('MSIE') !== -1 ||       navigator.appVersion.indexOf('Trident/') > -1     ) {       u = u.replace("/advanced/", "/advanced/ie/");     }     a.src = u;     b = d.getElementsByTagName(e)[0];     b.parentNode.insertBefore(a, b);   })(     window, document, "script", "https://www.mako.co.il/18f5227b-e27b-445a-a53f-f845fbe69b40/stormcaster.js", "cj2l", "ssConf"   );   ssConf("c1", "https://www.mako.co.il");   ssConf("c3", "c99a4269-161c-4242-a3f0-28d44fa6ce24");   ssConf("au", "mako.co.il");   ssConf("cu", "validate.perfdrive.com, ssc"); </script></head>
+		<body class="neo lobby">
+		<script>
+		if(window.mainChannelId && mainChannelId == '664fc865ef6ac510VgnVCM2000002a0c10acRCRD'){
+			if(window.currentChannelId && (currentChannelId == '664fc865ef6ac510VgnVCM2000002a0c10acRCRD' || currentChannelId == 'f847e527ececc510VgnVCM2000002a0c10acRCRD')){
+				$('body').addClass('tvbee homepage');
+			}
+			else{
+				$('body').addClass('tvbee');
+			}
+		}else{
+			window.mainChannelId && document.body.classList.add('ch'+window.mainChannelId.substr(0,16));
+			if(window.currentChannelId && ((currentChannelId == '5ef20518b1dbe510VgnVCM2000002a0c10acRCRD') || (currentChannelId =='b06a50adbee78610VgnVCM2000002a0c10acRCRD'))){
+				$('body').addClass('home');
+			}
+			if(window.currentChannelId && currentChannelId == '7775df40513b1310VgnVCM2000002a0c10acRCRD'){
+				$('body').addClass('mivzakim');
+			}
+		}
+		</script>
+		<script src="https://rcs.mako.co.il/js/bannend.js" ></script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-T87PQS" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-T87PQS');</script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WH7Q78" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WH7Q78');</script>
+<!-- End Google Tag Manager -->
+<script>(window.upManager || []).push("76410001");</script>
+<!-- GPT script begin -->
+<script>var makoReferrer = 'mako';if(document.referrer.length == 0){	makoReferrer = 'empty';	}else{var ref = document.referrer.split('?');	if (ref[0].indexOf("mako.co.il") ==-1)makoReferrer = 'other';}</script>
+<script src="https://rcs.mako.co.il/js/scripts/MDcookie.js" ></script>
+<script src="https://rcs.mako.co.il/js/dfp/dfp.js" ></script>
+<script src="//www.mako.co.il/Collab/cm8/360Advert.js"></script>
+<style>#Fullscreen_Wrapper iframe{width:100%;height:100%;position:fixed;left:0}</style>
+<div id="Fullscreen_Wrapper" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;visibility:visible;z-index:2147483638;"></div>
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+var gclidVal = 'FALSE';
+try{gclidVal =(localStorage.getItem('mako_gclid') || location.search.indexOf('gclid=') > -1) ? 'TRUE' : 'FALSE';}catch(err){}
+var agent = navigator.userAgent.toLowerCase();
+var isNoOzenNeeded = (agent.indexOf('ipad') != -1 || agent.indexOf('iphone') != -1 || agent.indexOf('android') != -1 )
+if (isNoOzenNeeded && window.DFP){DFP.ozenReady=true;}
+
+var CM8MakoHN = window.houseNumbers ? ("&makoHN="+houseNumbers) : "";	
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	function addCustomCriteria(name, val){
+		 (val &&  val != '' && val != 'null') ? googletag.pubads().setTargeting(name, val) : '';
+}
+	
+if (isCM8){
+	var googleAds = [];
+    googletag.cmd.push(function (){
+    // permutive code
+    if (0===window.googletag.pubads().getTargeting("permutive").length){try{var g=window.localStorage.getItem("_pdfps");window.googletag.pubads().setTargeting("permutive",g?JSON.parse(g):[])}catch(e){}}
+    
+    var fullscreen = googletag.defineSlot('/242748299/mako/travel/Travel_Global/FULLSCREEN', [[970,250],[970,540]],'Fullscreen_Wrapper').setTargeting("FORMAT","FULLSCREEN").addService(googletag.pubads());
+    
+    // end permutive code
+    var $presentationSelector = $('body.neo.presentation');
+   	var isPresentaionPage = $presentationSelector && $presentationSelector.children().length != 0;
+   	var presentaionPageExclude=(vcmidOfContent=="a078082f16540610VgnVCM2000002a0c10acRCRD");
+    if(!isPresentaionPage || presentaionPageExclude){
+   		googleAds[0]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/PREMIUM', [[970,540],[970,330],[5,5],[3,3],[970,250]],'CM8ShowAd_MEGA_PLASMA_970X330').addService(googletag.pubads()).setTargeting("FORMAT", ["PLASMA1_970","MEGA_PLASMA","ELVIS_MEGAPLASMA","ELVIS_PLASMA","Billboard970"]).setCollapseEmptyDiv(true,true);
+    }else{
+    	googleAds[0]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/PREMIUM', [[970,540],[970,330],[5,5],[3,3],[970,250]],'CM8ShowAd_MEGA_PLASMA_970X330').addService(googletag.pubads()).setTargeting("FORMAT", ["PLASMA1_970","MEGA_PLASMA","Billboard970"]).setCollapseEmptyDiv(true,true);		
+    }
+   	
+    googleAds[1]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/PLASMA1_750', [[750,140],[5,5]],'CM8ShowAd_PLASMA1_750X140').addService(googletag.pubads()).setTargeting("FORMAT", ["PLASMA1_750"]).setCollapseEmptyDiv(true,true);
+      
+    googleAds[2]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/OZEN',[[160,600],[120,600],[240,400]],'mako_main_glideDiv').addService(googletag.pubads()).setTargeting("FORMAT","OZEN");
+	googleAds[3] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/JAMBO1_728',[728,90], 'CM8ShowAd_JAMBO1_728X90').addService(googletag.pubads()).setTargeting("FORMAT", "JAMBO1_728").setCollapseEmptyDiv(true,true);
+    googleAds[4] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/JAMBO1_970',[970,90], 'CM8ShowAd_JAMBO1_970X90').addService(googletag.pubads()).setTargeting("FORMAT", "JAMBO1_970").setCollapseEmptyDiv(true,true);
+	googleAds[5] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/CORNER_PEEL',[1,1], 'CM8ShowAd_CORNER_PEEL_1X1').addService(googletag.pubads()).setTargeting("FORMAT", "CORNER_PEEL").setCollapseEmptyDiv(true,true);
+       
+    googleAds[6] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER1_300',[300,250], 'CM8ShowAd_MONSTER1_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER1_300").setCollapseEmptyDiv(true,true);
+    
+    googleAds[7] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER2_300',[300,250], 'CM8ShowAd_MONSTER2_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER2_300");
+    
+    googleAds[8] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER3_300',[300,250], 'CM8ShowAd_MONSTER3_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER3_300");
+	
+    googleAds[9] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER1_250',[250,250], 'CM8ShowAd_MONSTER1_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER1_250");
+    
+    googleAds[10] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER2_250',[250,250], 'CM8ShowAd_MONSTER2_250X250').addService(googletag.pubads()).setTargeting("FORMAT","MONSTER2_250");
+    
+    googleAds[11] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER3_250',[250,250], 'CM8ShowAd_MONSTER3_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER3_250");
+    
+    googleAds[12] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/POSTER',[300,600], 'CM8ShowAd_POSTER_300X600').addService(googletag.pubads()).setTargeting("FORMAT", "POSTER");
+    
+    googleAds[13] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/POSTER2',[300,600], 'CM8ShowAd_POSTER2_300X600').addService(googletag.pubads()).setTargeting("FORMAT", "POSTER2");
+    
+    googleAds[14] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/POSTER3',[300,600], 'CM8ShowAd_POSTER3_300X600').addService(googletag.pubads()).setTargeting("FORMAT", "POSTER3");
+	
+	googleAds[15]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/INNER_OZEN',[120,600],'CM8ShowAd_OZEN1_120X600').addService(googletag.pubads()).setTargeting("FORMAT","OZEN_INNER").setCollapseEmptyDiv(true,true);
+    
+	googleAds[16]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/COAST2COAST1_970',[970,90],'CM8ShowAd_COAST2COAST1_970X90').addService(googletag.pubads()).setTargeting("FORMAT","COAST2COAST1_970");
+        
+    googleAds[17]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/COAST2COAST1_728',[728,90],'CM8ShowAd_COAST2COAST1_728X90').addService(googletag.pubads()).setTargeting("FORMAT","COAST2COAST1_728");
+    
+    googleAds[18]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/STANDARD1',[234,60],'CM8ShowAd_STANDARD1_234X60').addService(googletag.pubads()).setTargeting("FORMAT","STANDARD1");
+   
+    googleAds[19]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/CUBE1',[276,174],'CM8ShowAd_CUBE1_276X174').addService(googletag.pubads()).setTargeting("FORMAT","CUBE1");   
+   
+	googleAds[20] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE1_250X250',[250,250], 'CM8ShowAd_ARTICLE1_250X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE1_250X250").setCollapseEmptyDiv(true,true);
+	
+    googleAds[21] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE1_300X250',[300,250],'CM8ShowAd_ARTICLE1_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE1_300X250").setCollapseEmptyDiv(true,true);   
+    
+    googleAds[22] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER4_300',[300,250], 'CM8ShowAd_MONSTER4_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER4_300");
+    googleAds[23] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER5_300',[300,250], 'CM8ShowAd_MONSTER5_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER5_300");
+    googleAds[24] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER6_300',[300,250], 'CM8ShowAd_MONSTER6_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER6_300");
+    googleAds[25] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER7_300',[300,250], 'CM8ShowAd_MONSTER7_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER7_300");
+    googleAds[26] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER8_300',[300,250], 'CM8ShowAd_MONSTER8_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER8_300");
+    googleAds[27] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER9_300',[300,250], 'CM8ShowAd_MONSTER9_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER9_300");
+    googleAds[28] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER10_300',[300,250], 'CM8ShowAd_MONSTER10_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER10_300");
+    googleAds[29] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE2_300X250',[300,250],'CM8ShowAd_ARTICLE2_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE2_300X250").setCollapseEmptyDiv(true,true);
+    googleAds[30] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE3_300X250',[300,250],'CM8ShowAd_ARTICLE3_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE3_300X250").setCollapseEmptyDiv(true,true); 
+    googleAds[31] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE4_300X250',[300,250],'CM8ShowAd_ARTICLE4_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE4_300X250").setCollapseEmptyDiv(true,true);
+    googleAds[32] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE5_300X250',[300,250],'CM8ShowAd_ARTICLE5_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE5_300X250").setCollapseEmptyDiv(true,true); 
+    googleAds[33] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/ARTICLE6_300X250',[300,250],'CM8ShowAd_ARTICLE6_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "ARTICLE6_300X250").setCollapseEmptyDiv(true,true);   
+    
+    googleAds[34]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/MONSTER_300',[300,250], 'CM8ShowAd_MONSTER_300X250').addService(googletag.pubads()).setTargeting("FORMAT", "MONSTER_300").setCollapseEmptyDiv(true,true);
+    googleAds[35]=googletag.defineSlot('/242748299/mako/travel/Travel_Global/DOUBLESTANDARD',[468,60],'CM8ShowAd_DOUBLESTANDARD_468X60').addService(googletag.pubads()).setTargeting("FORMAT","DOUBLESTANDARD").setCollapseEmptyDiv(true,true);
+    
+    
+    //googleAds[29] = googletag.defineSlot('/242748299/mako/travel/Travel_Global/PREMIUM', [[6,6],[3,3]],'CM8ShowAd_BILLBOARD_970X400').addService(googletag.pubads()).setTargeting("FORMAT", "Billboard970").setCollapseEmptyDiv(true,true);
+    
+    if(window.contentType=='articleins'){
+    	if(document.querySelector('link[rel="video_src"]')!=null){
+    		addCustomCriteria("video","true");
+    	}
+    }
+    
+    window.DFP && googletag.defineOutOfPageSlot('/242748299/mako/travel/Travel_Global/TOPLAYER','DFP_TOPLAYER').addService(googletag.pubads()).setTargeting("FORMAT", "TOPLAYER");
+      
+       addCustomCriteria("makoHN", window.houseNumbers);
+       //addCustomCriteria("MAKOAREA", '');
+       addCustomCriteria("MAKOPAGE", 'fae025e732e7f110VgnVCM2000002a0c10acRCRD');
+       addCustomCriteria("mako_referrer", makoReferrer);
+       addCustomCriteria("CONTENTTYPE", window.contentType);
+       addCustomCriteria("LEVEL4", 'travel_world_guides');
+       addCustomCriteria("LEVEL5", 'travel_world_guides_barcelona');
+       addCustomCriteria("LEVEL6", 'null');
+       addCustomCriteria("LEVEL7", 'null');  
+       addCustomCriteria("GCLID", gclidVal);
+	   // for test use
+       var subDomainMako = location.hostname.split('.')[0];
+       if (subDomainMako == 'wint' || subDomainMako == 'wadm') {
+       	   addCustomCriteria("TEST", subDomainMako.toUpperCase()); 
+       }
+	   //googletag.pubads().collapseEmptyDivs(true);
+	   //if (DFP && DFP.isHP){
+	   //   googletag.pubads().enableSingleRequest();
+       //}
+       googletag.pubads().addEventListener('slotRenderEnded', function(event) {		
+            DFP && DFP.renderAdEnded && DFP.renderAdEnded(event); 
+            if (event.slot.getSlotElementId() === 'Fullscreen_Wrapper' && event.isEmpty == false){
+                document.querySelector('#Fullscreen_Wrapper').style.display = 'block';
+            }
+	    });
+        googletag.enableServices();       
+    });
+    googletag.cmd.push(function (){
+        googletag.display('Fullscreen_Wrapper');
+    });
+}    
+</script>
+<div id="DFP_TOPLAYER" style="height:0px"></div>
+<script>window.DFP && window.Lazy && Lazy.js(function(){googletag.cmd.push(function() { googletag.display('DFP_TOPLAYER'); });}); </script>
+<script async src="//mrb.upapi.net/code?w=5632346594213888&uponit=true"></script>
+<header class="responsive">
+		<div class="inner">
+	<a class="logo" href="https://www.mako.co.il/">
+						
+					<img src="https://img.mako.co.il/2024/07/18/new-logo.png"  width="137" height="50">
+				
+				 </a>
+				<div class="fb"><a href="https://www.facebook.com/keshet.mako/" target="_blank" data-event-action="Facebook"></a></div>
+			<div class="mail"><a href="https://www.activetrail.co.il/mako" target="_blank" data-event-action="Newsletter"></a></div>
+			<div class="forecast" data-feed="/AjaxPage?jspName=sideBarJsonResponse.jsp&type=weather">
+				<div class="flexslider loading">
+					<ul class="slides">
+						<li><a href="/news-weather?partner=NavBar"></a></li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="search" data-tags="/AjaxPage?jspName=popularTagsResponse.jsp">
+				<a href="#" data-event-action="Search Icon"></a>
+				
+			</div>
+		
+		</div>
+	</header>
+
+<div class="navWrap not_for_print">
+<nav class="responsive v2">
+<div class="inner">
+
+	<ul>
+<li class="logo">
+				<a href="https://www.mako.co.il/">
+						
+					<img src="https://img.mako.co.il/2024/07/21/stiklo.png"  width="112" height="40">
+				
+				 </a>
+				<li ><a href="https://www.n12.co.il/" ><b>חדשות</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/men" ><b>פלילים</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/entertainment" ><b>סלבס</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/food" ><b>אוכל</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/weekend" ><b>מגזין</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://710worldmustknow.mako.co.il/he?makoOpenChromeTabs=1" ><b>הסברה</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/mako-vod" ><b>+12</b><span class="moreBtn"></span></a></li>
+			<li  class="programs"><a href="#"  data-event-action="Program DropDown"><b>תכניות קשת</b><span class="moreBtn"></span></a><div><div class="scrollable"><span class="closeBtn"></span><ul><li><figure>
+	  									<img src="https://img.mako.co.il/2024/07/01/EPG_AmaizinRace_S1_LOGO_autoOrient_b.jpg" alt="" data-pic-f="/2024/07/01/EPG_AmaizinRace_S1_LOGO_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>המירוץ למיליון</strong>
+	  										<a href="https://www.mako.co.il/tv-the_amazing_race" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/the_amazing_race?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2024/05/27/Rokdim2024_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2024/05/27/Rokdim2024_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>רוקדים עם כוכבים</strong>
+	  										<a href="https://www.mako.co.il/tv-dancing_with_the_stars" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/dancing_with_stars-s3?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2024/02/28/MasterChef_11_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2024/02/28/MasterChef_11_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>מאסטר שף</strong>
+	  										<a href="/food-masterchef?Partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/masterchef?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2022/09/20/ErtezNehederet_S20_EPG_re_autoOrient_b.jpg" alt="" data-pic-f="/2022/09/20/ErtezNehederet_S20_EPG_re_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>ארץ נהדרת</strong>
+	  										<a href="/tv-erez-nehederet?Partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/eretz_nehederet?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2024/02/22/HadshotHaboker2022_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2024/02/22/HadshotHaboker2022_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>חדשות הבוקר עם ניב רסקין</strong>
+	  										<a href="http://www.mako.co.il/tv-morning-news" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/morning_news?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2022/12/29/UVDA2022_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2022/12/29/UVDA2022_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>עובדה</strong>
+	  										<a href="/tv-ilana_dayan?Partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/uvda?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2017/09/07/I-atum-erev-tov-3_b.jpg" alt="" data-pic-f="/2017/09/07/f-shakoof-2.png">
+	  									<figcaption>
+	  										<strong>ערב טוב עם גיא פינס</strong>
+	  										<a href="http://www.mako.co.il/good-evening-with-guy-pines?partner=NavBar"  target="_blank" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/good-evening-with-guy-pines?partner=NavBar"  target="_blank" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2020/02/16/Hasifa2020-LOGO-I_b.jpg" alt="" data-pic-f="/2020/02/16/Hasifa2020-LOGO-F-2.png">
+	  									<figcaption>
+	  										<strong>חשיפה</strong>
+	  										<a href="https://www.mako.co.il/tv-exposure" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/exposure?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2023/06/01/HatunaS06_epg_autoOrient_b.jpg" alt="" data-pic-f="/2023/06/01/HatunaS06_epg_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>חתונה ממבט ראשון</strong>
+	  										<a href="https://www.mako.co.il/tv-married-at-first-sight" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/wedding-at-first-sight-s6?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2022/11/07/HaMitbahHamenazeh_VIP_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2022/11/07/HaMitbahHamenazeh_VIP_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>המטבח המנצח VIP</strong>
+	  										<a href="https://www.mako.co.il/tv-mkr_israel?Partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/mkr_israel?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2023/01/08/NinjaS05_EPG_autoOrient_b.jpg" alt="" data-pic-f="/2023/01/08/NinjaS05_EPG_autoOrient_f.jpg">
+	  									<figcaption>
+	  										<strong>נינג'ה ישראל 2023</strong>
+	  										<a href="/tv-ninja_israel?Partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/ninja_israel?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li><figure>
+	  									<img src="https://img.mako.co.il/2019/11/03/i12345_b.jpg" alt="" data-pic-f="/2019/11/04/F-shakuf.png">
+	  									<figcaption>
+	  										<strong>הקומה ה-12</strong>
+	  										<a href="/finances-real-estate/floor12?partner=NavBar" >אתר התכנית</a>
+											<a href="https://www.mako.co.il/mako-vod-keshet/hakoma_h_12?partner=NavBar" >לפרקים המלאים</a>
+	  									</figcaption>
+									</figure></li><li class="footer">
+						<ul>
+							<li class="tv"><a href="/tv?partner=NavBar">אתרי התכניות</a></li>
+							<li class="vod"><a href="https://www.mako.co.il/mako-vod?partner=NavBar">פרקים מלאים</a></li>
+							<li><a href="/tv-tv-schedule?partner=NavBar">לוח השידורים</a></li>
+							<li><a href="/tv-joinus?partner=NavBar">הרשמה לתכניות</a></li>
+						</ul>
+					</li>
+				</ul></div></div></li>
+			<li  class="specials"><a href="#" ><b>שיתופי פעולה</b><span class="moreBtn"></span></a><div><div class="scrollable"><span class="closeBtn"></span><ul><li ><a href="https://www.mako.co.il/special-family_august" >אוגוסט משפחתי</a></li><li ><a href="https://www.mako.co.il/study-career-open-days"  target="_blank" >בדרך לתואר</a></li><li ><a href="https://www.mako.co.il/special-proud_of_israel"  target="_blank" >גאווה ישראלית</a></li><li ><a href="https://www.mako.co.il/study-career-career/drushim"  target="_blank" >דרושים IL</a></li><li ><a href="https://www.mako.co.il/finances-special/home_for_small_businesses"  target="_blank" >הבית לעסקים קטנים</a></li><li ><a href="https://www.mako.co.il/special-pregnancy_childbirth_in_israel" >היריון ולידה בישראל</a></li><li ><a href="https://www.mako.co.il/food-special/quick_quaker"  target="_blank" >טעים פי קוואקר</a></li><li ><a href="https://www.mako.co.il/news-med12/lung_ambition?makoOpenExternal=1"  target="_blank" >לאנג אמבישן</a></li><li ><a href="https://www.mako.co.il/tv-shark-tank/season4-learn_from_the_sharks"  target="_blank" >לומדים מהכרישים</a></li><li ><a href="https://www.mako.co.il/food-cooking_magazine/clean_plates"  target="_blank" >לנגב את הצלחת</a></li><li ><a href="https://www.mako.co.il/special-xtra_magazine"  target="_blank" >מגזין XTRA</a></li><li ><a href="https://www.mako.co.il/special-consumer_rights" >מה מגיע לי</a></li><li ><a href="https://www.mako.co.il/health-magazine/healthy_beautiful_skin" >עור בריא זה עור יפה</a></li><li  class="en"><a href="https://www.mako.co.il/health-special/infomed"  target="_blank" >infomed</a></li><li  class="en"><a href="https://www.mako.co.il/news-med12?makoOpenExternal=1"  target="_blank" >MED12</a></li><li  class="en"><a href="https://story.mako.co.il/topcar2"  target="_blank" >Top Car</a></li><li ><a href="https://www.mako.co.il/special"  target="_blank" >רוצים לזכות בפרס?</a></li></ul></div></div></li>
+			<li  class="en"><a href="/tvbee" ><b>tvbee</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/pzm" ><b>צבא וביטחון</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/health" ><b>בריאות</b><span class="moreBtn"></span></a></li>
+			<li  class="en"><a href="/hix" ><b>HIX</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/culture" ><b>טלוויזיה ותרבות</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/press_and_marketing" ><b>תקשורת ושיווק</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/music" ><b>מוזיקה</b><span class="moreBtn"></span></a></li>
+			<li  class="en"><a href="https://hitlist.mako.co.il/" ><b>mako היטליסט</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/spirituality-popular_culture/Article-494842ff06e9431006.htm" ><b>כניסת שבת</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/finances" ><b>כסף</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/Sports" ><b>ספורט</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/home-family" ><b>הורים</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/living" ><b>עיצוב הבית</b><span class="moreBtn"></span></a></li>
+			<li  class="en"><a href="http://fashionforward.mako.co.il/" ><b>Fashion Forward</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/nexter" ><b>דיגיטל</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/travel" ><b>חופש</b><span class="moreBtn"></span></a></li>
+			<li ><a href="http://www.mako.co.il/finances-law" ><b>משפט</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/spirituality-newage/horoscope" ><b>הורוסקופ</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/ninemonth?partner=NavBar" ><b>9 חודשים</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.auto.co.il/?partner=NavBar" ><b>אוטו</b><span class="moreBtn"></span></a></li>
+			<li ><a href="/pride" ><b>גאווה</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://shironet.mako.co.il/?partner=NavBar" ><b>שירונט</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/tv-special/whats_up_keshet" ><b>מה קורה בקשת</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/special-freetv_mako/love_island_israel" ><b>לאב איילנד</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/24tv" ><b>ערוץ 24</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://jobs.keshet-mediagroup.com/" ><b>בואו לעבוד איתנו</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.activetrail.co.il/mako/?utm_source=mako&utm_medium=NavBar_HP&utm_campaign=Newsletter" ><b>הניוזלטרים שלנו</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako-publishers.com?makoOpenChromeTabs=1" ><b>פרסמו אצלנו</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/news-news-flash" ><b>מבזקים</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/special-projects" ><b>פרויקטים מיוחדים</b><span class="moreBtn"></span></a></li>
+			<li ><a href="https://www.mako.co.il/special-roim_rachok_keshet" ><b>רואים רחוק</b><span class="moreBtn"></span></a></li>
+			<li  class="en"><a href="https://easy.co.il/home/?utm_source=mako&utm_campaign=homepage&utm_medium=link" ><b>easy</b><span class="moreBtn"></span></a></li>
+			<li class="more-menu">
+	<a href="#" data-event-action="More DropDown"><b>עוד</b><span class="moreBtn"></span></a>
+	<div>
+		<div class="scrollable">
+			<span class="closeBtn"></span>
+			<ul>
+				<li><a href="https://www.n12.co.il/">חדשות</a></li><li><a href="https://www.mako.co.il/men">פלילים</a></li><li><a href="/entertainment">סלבס</a></li><li><a href="/food">אוכל</a></li><li><a href="https://www.mako.co.il/weekend">מגזין</a></li><li><a href="https://710worldmustknow.mako.co.il/he?makoOpenChromeTabs=1">הסברה</a></li><li><a href="https://www.mako.co.il/mako-vod">+12</a></li><li class="programs"><a href="#">תכניות קשת</a></li><li class="specials"><a href="#">שיתופי פעולה</a></li><li class="en"><a href="/tvbee">tvbee</a></li><li><a href="https://www.mako.co.il/pzm">צבא וביטחון</a></li><li><a href="/health">בריאות</a></li><li class="en"><a href="/hix">HIX</a></li><li><a href="/culture">טלוויזיה ותרבות</a></li><li><a href="https://www.mako.co.il/press_and_marketing">תקשורת ושיווק</a></li><li><a href="/music">מוזיקה</a></li><li class="en"><a href="https://hitlist.mako.co.il/">mako היטליסט</a></li><li><a href="https://www.mako.co.il/spirituality-popular_culture/Article-494842ff06e9431006.htm">כניסת שבת</a></li><li><a href="/finances">כסף</a></li><li><a href="/Sports">ספורט</a></li><li><a href="/home-family">הורים</a></li><li><a href="/living">עיצוב הבית</a></li><li class="en"><a href="http://fashionforward.mako.co.il/">Fashion Forward</a></li><li><a href="/nexter">דיגיטל</a></li><li><a href="/travel">חופש</a></li><li><a href="http://www.mako.co.il/finances-law">משפט</a></li><li><a href="https://www.mako.co.il/spirituality-newage/horoscope">הורוסקופ</a></li><li><a href="/ninemonth?partner=NavBar">9 חודשים</a></li><li><a href="https://www.auto.co.il/?partner=NavBar">אוטו</a></li><li><a href="/pride">גאווה</a></li><li><a href="https://shironet.mako.co.il/?partner=NavBar">שירונט</a></li><li><a href="https://www.mako.co.il/tv-special/whats_up_keshet">מה קורה בקשת</a></li><li><a href="https://www.mako.co.il/special-freetv_mako/love_island_israel">לאב איילנד</a></li><li><a href="https://www.mako.co.il/24tv">ערוץ 24</a></li><li><a href="https://jobs.keshet-mediagroup.com/">בואו לעבוד איתנו</a></li><li><a href="https://www.activetrail.co.il/mako/?utm_source=mako&utm_medium=NavBar_HP&utm_campaign=Newsletter">הניוזלטרים שלנו</a></li><li><a href="https://www.mako-publishers.com?makoOpenChromeTabs=1">פרסמו אצלנו</a></li><li><a href="https://www.mako.co.il/news-news-flash">מבזקים</a></li><li><a href="https://www.mako.co.il/special-projects">פרויקטים מיוחדים</a></li><li><a href="https://www.mako.co.il/special-roim_rachok_keshet">רואים רחוק</a></li><li class="en"><a href="https://easy.co.il/home/?utm_source=mako&utm_campaign=homepage&utm_medium=link">easy</a></li></ul>
+		</div>
+	</div>
+</li>
+<li class="search" data-tags="/AjaxPage?jspName=popularTagsResponse.jsp"><a href="#" data-event-action="Search Icon"></a>
+	<div class="content">
+		<div class="scrollable">
+			<span class="closeBtn"></span>
+			<div data-search='{"dataURL": "/autocomplete/SearchesKeywords.ashx"}'>
+				<form action="/Search" autocomplete="off">
+					<input type="text" name="searchstring_input" placeholder="מה אתה מחפש?" value=""/>
+					<input type="hidden" value="888f9edb29436110VgnVCM1000005201000aRCRD" name="vgnextoid" id="vgnextoid">
+					<input type="hidden" value="" name="partnerURL" id="partnerURL">
+					<input type="hidden" value="regular" name="formType" id="formType">
+					<input type="submit" value="חפש"/>
+					<span class="inputText"></span>
+									
+															
+				</form>
+				<div class="ui-autocomplete-wrapper"></div>	
+			</div>
+			<div class="recommend">
+				<strong>המומלצים</strong>
+				<div class="programs"><ul></ul></div>
+				<div class="peopleTags"><ul></ul></div>
+				<div class="tags"><ul></ul></div>
+			</div>
+		</div>
+	</div>			
+</li>
+</ul>
+</div>
+	
+</nav>
+</div>
+<div id="top-strip-v_2017">
+				<div>
+					<!-- noTop Page Strip -->
+<div style="width:auto;" class="empty"></div>
+<style>
+.neo.articleins div#neoTopStrip .empty{
+	margin-top:-24px;
+}
+</style></div>
+			</div>
+			<div id="mako_main_glideDiv">
+					<script>
+		if(window.DFP && !DFP.ozenReady){
+			if(DFP.isStandard || (typeof DFP.isNeo !=="undefined" && !DFP.isNeo && !DFP.isHP))
+				googletag.cmd.push(function() { googletag.display('mako_main_glideDiv'); });
+			else
+				DFP.savedDisplay.push('mako_main_glideDiv');
+			DFP.ozenReady=true;
+		}
+		</script>
+	<div class="ad b120X600 cm8">
+			<div id="CM8ShowAd_OZEN_120X600" data-title="OZEN_120X600">
+			<script>			
+				window.DFP && DFP.showBanner('OZEN','120X600');				
+			</script>
+			</div>
+		</div>
+<script>
+		if(window.DFP && !DFP.ozenReady){
+			if(DFP.isStandard || (typeof DFP.isNeo !=="undefined" && !DFP.isNeo && !DFP.isHP))
+				googletag.cmd.push(function() { googletag.display('mako_main_glideDiv'); });
+			else
+				DFP.savedDisplay.push('mako_main_glideDiv');
+			DFP.ozenReady=true;
+		}
+		</script>
+	<div class="ad b160X600 cm8">
+			<div id="CM8ShowAd_OZEN_160X600" data-title="OZEN_160X600">
+			<script>			
+				window.DFP && DFP.showBanner('OZEN','160X600');				
+			</script>
+			</div>
+		</div>
+</div>
+			<div class="mako_scroller_container">
+			<div class="mako_content_container">
+			<div class="mako_main_main_containter">
+			<div class="ad b970X90XJAMBO large-mid-ad cm8">
+			<div id="CM8ShowAd_JAMBO1_970X90" data-title="JAMBO1_970X90">
+			<script>			
+				window.DFP && DFP.showBanner('JAMBO1','970X90');				
+			</script>
+			</div>
+		</div>
+<div class="ad b970X330 cm8">
+			<div id="CM8ShowAd_MEGA_PLASMA_970X330" data-title="MEGA_PLASMA_970X330">
+			<script>			
+				window.DFP && DFP.showBanner('MEGA_PLASMA','970X330');				
+			</script>
+			</div>
+		</div>
+<script>jsChannelName = 'חופש';</script>
+	    <header class="skin-v_2017 not_for_print"><style>.madorimWrap strong,.lobbyMostViewed.itemsWrap.child>strong,.itemsWrap.free-items>strong,.itemsWrap.child.ordering>strong,.itemsWrap.child.flodding>strong,div.vid-gallery>ul.watch>li.cat>strong{padding-bottom: 3px;}.madorimWrap strong>a,.lobbyMostViewed.itemsWrap.child>strong>a,.itemsWrap.free-items>strong>a,.itemsWrap.child.ordering>strong>a,.itemsWrap.child.flodding>strong>a,div.vid-gallery>ul.watch>li.cat>strong>a{color:#1b2e3e!important;}</style><strong ><a href="/travel?partner=ChannelHeader">חופש</a></strong>
+			</header><nav class="breadcrumbs-v_2017">
+	<h1>
+			<ul itemscope itemtype="https://schema.org/BreadcrumbList" class="navigation navigation_small"><li class="" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" class="pr_here" href="/travel?partner=BreadCrumbs"><span style="display: inline-block;" itemprop="name">חופש</span></a><meta itemprop="position" content="1"/></li> <li class="" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" class="pr_here" href="/travel-world?partner=BreadCrumbs"><span style="display: inline-block;" itemprop="name">טיולים בעולם</span></a><meta itemprop="position" content="2"/></li> <li class="" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" class="pr_here" href="/travel-world/guides?partner=BreadCrumbs"><span style="display: inline-block;" itemprop="name">מדריכי יעדים</span></a><meta itemprop="position" content="3"/></li> <li class=" here" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a itemprop="item" class="pr_here" href="/travel-world/guides-barcelona?partner=BreadCrumbs"><span style="display: inline-block;" itemprop="name">ברצלונה</span></a><meta itemprop="position" content="4"/></li> </ul></h1><div class="followButtons"><div>
+		<ul>
+		<li class="first"><a class="email" title="מייל"target="_blank" href="http://mako.sniperm.com/contents/index.html"></a></li>
+		<li class="border"></li><li ><a class="fb" title="פייסבוק"target="_blank" href="https://www.facebook.com/pages/%D7%91%D7%90-%D7%9C%D7%99-%D7%97%D7%95%D7%A4%D7%A9/330795726932030?fref=ts"></a></li>
+		<li class="border"></li><li ><a class="instagram" title="אינסטגרם"target="_blank" href="https://www.instagram.com/mako.traveling/"></a></li>
+		<li class="border"></li>
+		<li class="last"><span>עקבו אחרינו</span></li>
+		</ul>
+</div></div>
+</nav>
+	<div class="header_width shatap_menu_bg">
+					<ul class="header_width navigation_row"><li >
+								<a vcmID="888f9edb29436110VgnVCM1000005201000aRCRD"  target="_blank" href="/travel?partner=SecondNav">חופש</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID="c6af9edb29436110VgnVCM1000005201000aRCRD"  target="_blank" href="/travel-news?partner=SecondNav">חדשות</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID="b1af9edb29436110VgnVCM1000005201000aRCRD" href="/travel-israel?partner=SecondNav">טיולים בארץ</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID="379f9edb29436110VgnVCM1000005201000aRCRD" href="/travel-world?partner=SecondNav">טיולים בחו"ל</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID=""  target="_blank" href="https://www.mako.co.il/travel-world/guides?partner=SecondNav">מדריכי יעדים לעולם</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID=""  target="_blank" href="https://www.mako.co.il/travel-israel/family_trip?partner=SecondNav">טיולים מומלצים לשבת</a>
+							</li>
+						<li class="sep">&nbsp;</li>
+						<li >
+								<a vcmID=""  target="_blank" href="https://www.mako.co.il/travel-israel/magazine/Article-8cfb2c8898caf71027.htm?partner=SecondNav">עומס בנתב"ג</a>
+							</li>
+						</ul>
+	</div>
+<script type="text/javascript">
+	/*Lazy.js(function(){
+		j$("a",".sponsor-mano").click(function(e){
+			e.preventDefault();
+			var scrollTo=j$(".mako_main_footer_table").position().top;
+			j$(document).scrollTop(scrollTo-100);
+			if (window.makoEventTracker) {
+	            makoEventTracker.init();
+			}
+			window._gaq.push(['_trackEvent', 'Mano Sapanut', 'ClickScrollButton', 'Mano Sapanut Banner | ' + mainChannelId + ' | ' + currentChannelId  ]);
+		});
+	});*/
+	Lazy.js(function(){
+		if(!j$("body").hasClass("neo"))
+			navBar.selByIndx('3');
+	});
+	
+</script>
+<!-- begin page content area -->				
+					<style type="text/css">
+
+.vign-breadcrumbsContainer {
+  border: none;
+  margin: 0;
+  padding: 3px 9px;
+}
+.vign-breadcrumbsList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.vign-breadcrumbsList .vign-last {
+  background: none;
+}
+</style>
+<table border="0" cellpadding="0" cellspacing="0" class="mako_main_panel_table">
+	<tr><td class="mako_main_portlet_group_container_td left-col main_column_width"><div class="mako_main_portlet_container">
+<div class="madorDescWrap">
+	<div class="madorDesc hide default">
+				<div class="content">
+					<strong>ברצלונה</strong><p>אטרקציות, מלונות, אתרים שחייבים לראות, חיי לילה, מסעדות מומלצות וקניות בברצלונה: המדריך השלם</p>
+					<span class="openBtn"></span>
+				</div>
+			</div>
+		
+		<script type="text/javascript">
+			Lazy.js("rcs@/js/scripts/truncate.js",function(){
+				j$(".madorDesc").txtReveal({"rows":3});
+			});
+		</script>
+	</div></div>
+
+<!-- Mako chrome (default) portlet chrome for תיאור המדור חדש portlet - end --></td><td class="generic_horizontal_29_space"></td><td class="mako_main_portlet_group_container_td side_bar_width right-col"><div class="mako_main_portlet_container">
+<div class="miniHeaderNew not_for_print">
+						<div class="image_inside s632x110">
+		<a href="/travel-world/guides-barcelona">
+		<img src="https://img.mako.co.il/2014/12/11/MiniHeader_barcelona.png" loading="lazy" width="632" height="110" alt="" title="">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	</div>
+			</div>
+
+<!-- Mako chrome (default) portlet chrome for mador picture new portlet - end --></td></tr>
+</table><table border="0" cellpadding="0" cellspacing="0" class="mako_main_panel_table">
+	<tr><td class="mako_main_portlet_group_container_td single-col"><div class="mako_main_portlet_container_no_spacing">
+	    	<script>var BannerRenderInterval = !document.querySelector('meta[name=shatap]') && '4.04';</script></div>
+	  <div class="mako_main_portlet_container">
+</div>
+
+<!-- Mako chrome (default) portlet chrome for free text portlet - end --><div class="mako_main_portlet_container">
+<div id="liefArticleFlodding_div" name="liefArticleFlodding_div" class="itemsWrap">
+<ul>
+<li class="hover">
+        	<div class="image_inside s468x287">
+		<a href="/travel-world/guides-barcelona/Article-1ddd831481a2421004.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2014/10/28/goia_i.jpg" loading="lazy" width="468" height="287" alt="מלון גויה, ברצלונה (צילום: Hostal Goya, האתר הרשמי)" title="מלון גויה, ברצלונה (צילום: Hostal Goya, האתר הרשמי)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-1ddd831481a2421004.htm?sCh=fae025e732e7f110&pId=25483675">מלונות בברצלונה: המדריך המלא</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-1ddd831481a2421004.htm?sCh=fae025e732e7f110&pId=25483675">מלונות יוקרה, מלונות בוטיק מיוחדים והוסטלים במחיר סביר</a></p>
+			</div>
+			<span data-datetime="1630325400000"><span class="time"> זמן קריאה: </span>15<span class="time"> דק'</span></span><div class="social-share big" data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-1ddd831481a2421004.htm?sCh=fae025e732e7f110&pId=25483675" data-title="מלונות בברצלונה: המדריך המלא" data-description="מלונות יוקרה, מלונות בוטיק מיוחדים והוסטלים במחיר סביר">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%9E%D7%9C%D7%95%D7%A0%D7%95%D7%AA+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94%3A+%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A+%D7%94%D7%9E%D7%9C%D7%90&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-1ddd831481a2421004.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s468x287">
+		<a href="/travel-world/guides-barcelona/Article-af61ae6b0e6b951006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2017/01/19/shutterstock_341746754_i.jpg" loading="lazy" width="468" height="287" alt="ברצלונה (צילום: Mihai-Bogdan Lazar, Shutterstock)" title="ברצלונה (צילום: Mihai-Bogdan Lazar, Shutterstock)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-af61ae6b0e6b951006.htm?sCh=fae025e732e7f110&pId=25483675">המלצות לברצלונה: המסלול התיירותי והאלטרנטיבי</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-af61ae6b0e6b951006.htm?sCh=fae025e732e7f110&pId=25483675">גם אתם שם לראשונה וגם אם בפעם האלף: מדריך</a></p>
+			</div>
+			<span data-datetime="1553771820000"><span class="time"> זמן קריאה: </span>12<span class="time"> דק'</span></span><div class="social-share big" data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-af61ae6b0e6b951006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="המלצות לברצלונה: המסלול התיירותי והאלטרנטיבי" data-description="גם אתם שם לראשונה וגם אם בפעם האלף: מדריך">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%94%D7%9E%D7%9C%D7%A6%D7%95%D7%AA+%D7%9C%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94%3A+%D7%94%D7%9E%D7%A1%D7%9C%D7%95%D7%9C+%D7%94%D7%AA%D7%99%D7%99%D7%A8%D7%95%D7%AA%D7%99+%D7%95%D7%94%D7%90%D7%9C%D7%98%D7%A8%D7%A0%D7%98%D7%99%D7%91%D7%99&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-af61ae6b0e6b951006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-0aa61f5d20a2421004.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2013/02/14/ROMAN1_i_reduced.jpg" loading="lazy" width="304" height="186" alt="ברצלונה, המקום הרומנטי (צילום: אימג'בנק / Thinkstock)" title="ברצלונה, המקום הרומנטי (צילום: אימג'בנק / Thinkstock)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-0aa61f5d20a2421004.htm?sCh=fae025e732e7f110&pId=25483675">האתרים שאסור לפספס בברצלונה</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-0aa61f5d20a2421004.htm?sCh=fae025e732e7f110&pId=25483675">אדריכלות, היסטוריה וכדורגל: אתרי החובה בעיר</a></p>
+			</div>
+			<span data-datetime="1553793300000"><span class="time"> זמן קריאה: </span>2<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-0aa61f5d20a2421004.htm?sCh=fae025e732e7f110&pId=25483675" data-title="האתרים שאסור לפספס בברצלונה" data-description="אדריכלות, היסטוריה וכדורגל: אתרי החובה בעיר">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%94%D7%90%D7%AA%D7%A8%D7%99%D7%9D+%D7%A9%D7%90%D7%A1%D7%95%D7%A8+%D7%9C%D7%A4%D7%A1%D7%A4%D7%A1+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-0aa61f5d20a2421004.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-4c1dd3094c92421004.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2017/08/24/ohovslkierghdfjghdfkjg_4_I_reduced.jpg" loading="lazy" width="304" height="186" alt="ברצלונה (צילום: Drew Angerer, getty images)" title="ברצלונה (צילום: Drew Angerer, getty images)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-4c1dd3094c92421004.htm?sCh=fae025e732e7f110&pId=25483675">האטרקציות שאסור לפספס בברצלונה</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-4c1dd3094c92421004.htm?sCh=fae025e732e7f110&pId=25483675">מה עושים ומה רואים? אלה האתרים המומלצים</a></p>
+			</div>
+			<span data-datetime="1631420400000"><span class="time"> זמן קריאה: </span>8<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-4c1dd3094c92421004.htm?sCh=fae025e732e7f110&pId=25483675" data-title="האטרקציות שאסור לפספס בברצלונה" data-description="מה עושים ומה רואים? אלה האתרים המומלצים">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%94%D7%90%D7%98%D7%A8%D7%A7%D7%A6%D7%99%D7%95%D7%AA+%D7%A9%D7%90%D7%A1%D7%95%D7%A8+%D7%9C%D7%A4%D7%A1%D7%A4%D7%A1+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-4c1dd3094c92421004.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li><div class="banner_monster"></div></li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-717c8bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2014/10/28/MaremagnumFJV3155_i_reduced.jpg" loading="lazy" width="304" height="186" alt="מרמגנום, ברצלונה" title="מרמגנום, ברצלונה">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-717c8bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">קניות בברצלונה: המדריך המלא</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-717c8bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">הרשתות, הקניונים, השווקים והאאוטלטים השווים</a></p>
+			</div>
+			<span data-datetime="1630326900000"><span class="time"> זמן קריאה: </span>7<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-717c8bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="קניות בברצלונה: המדריך המלא" data-description="הרשתות, הקניונים, השווקים והאאוטלטים השווים">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%A7%D7%A0%D7%99%D7%95%D7%AA+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94%3A+%D7%94%D7%9E%D7%93%D7%A8%D7%99%D7%9A+%D7%94%D7%9E%D7%9C%D7%90&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-717c8bc79043421006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-5942af6721d1841006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2015/03/18/Barcelona_1_27082014_i_reduced.jpg" loading="lazy" width="304" height="186" alt="ברצלונה (צילום:  יחסי ציבור )" title="ברצלונה (צילום:  יחסי ציבור )">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-5942af6721d1841006.htm?sCh=fae025e732e7f110&pId=25483675">ברצלונה לצעירים: חוף נודיסטים, טאפאס ושופינג</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-5942af6721d1841006.htm?sCh=fae025e732e7f110&pId=25483675">לא צריך לנסוע רחוק כדי להרגיש בלוס אנג'לס</a></p>
+			</div>
+			<span data-datetime="1553794920000"><span class="time"> זמן קריאה: </span>2.5<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-5942af6721d1841006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="ברצלונה לצעירים: חוף נודיסטים, טאפאס ושופינג" data-description="לא צריך לנסוע רחוק כדי להרגיש בלוס אנג'לס">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94+%D7%9C%D7%A6%D7%A2%D7%99%D7%A8%D7%99%D7%9D%3A+%D7%97%D7%95%D7%A3+%D7%A0%D7%95%D7%93%D7%99%D7%A1%D7%98%D7%99%D7%9D%2C+%D7%98%D7%90%D7%A4%D7%90%D7%A1+%D7%95%D7%A9%D7%95%D7%A4%D7%99%D7%A0%D7%92&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-5942af6721d1841006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-9f9f3bb6fc33421006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2014/10/27/calpep_i_reduced.jpg" loading="lazy" width="304" height="186" alt="טאפאס Cal Pep בברצלונה (צילום: www.calpep.com, האתר הרשמי)" title="טאפאס Cal Pep בברצלונה (צילום: www.calpep.com, האתר הרשמי)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-9f9f3bb6fc33421006.htm?sCh=fae025e732e7f110&pId=25483675">מסעדות בברצלונה</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-9f9f3bb6fc33421006.htm?sCh=fae025e732e7f110&pId=25483675">המסעדות השוות, בתי הקפה הנחשבים והטפאס ברים המיוחדים</a></p>
+			</div>
+			<span data-datetime="1630327200000"><span class="time"> זמן קריאה: </span>6<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-9f9f3bb6fc33421006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="מסעדות בברצלונה" data-description="המסעדות השוות, בתי הקפה הנחשבים והטפאס ברים המיוחדים">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%9E%D7%A1%D7%A2%D7%93%D7%95%D7%AA+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-9f9f3bb6fc33421006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-7f97f85a2fd7141006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2013/09/30/iiyhjhj2_i_reduced.jpg" loading="lazy" width="304" height="186" alt="אקטול הוטל, מלונות בברצלונה" title="אקטול הוטל, מלונות בברצלונה">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-7f97f85a2fd7141006.htm?sCh=fae025e732e7f110&pId=25483675">איפה ישנים בברצלונה? מלונות טובים ולא יקרים</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-7f97f85a2fd7141006.htm?sCh=fae025e732e7f110&pId=25483675">מיקום מרכזי, חדרים עם המון סטייל ואחלה בופה</a></p>
+			</div>
+			<span data-datetime="1370850000000"><span class="time"> זמן קריאה: </span>2<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-7f97f85a2fd7141006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="איפה ישנים בברצלונה? מלונות טובים ולא יקרים" data-description="מיקום מרכזי, חדרים עם המון סטייל ואחלה בופה">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%90%D7%99%D7%A4%D7%94+%D7%99%D7%A9%D7%A0%D7%99%D7%9D+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94%3F+%D7%9E%D7%9C%D7%95%D7%A0%D7%95%D7%AA+%D7%98%D7%95%D7%91%D7%99%D7%9D+%D7%95%D7%9C%D7%90+%D7%99%D7%A7%D7%A8%D7%99%D7%9D&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-7f97f85a2fd7141006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-a076d12a0a92421004.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2016/05/03/banahimmgasool_17_i_reduced.jpg" loading="lazy" width="304" height="186" alt="בניינים שחייבים לראות, סגרדה פמילייה ברצלונה (צילום: Shutterstock)" title="בניינים שחייבים לראות, סגרדה פמילייה ברצלונה (צילום: Shutterstock)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-a076d12a0a92421004.htm?sCh=fae025e732e7f110&pId=25483675">מידע שימושי על ברצלונה</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-a076d12a0a92421004.htm?sCh=fae025e732e7f110&pId=25483675">מזג אוויר, טיסות, תחבורה וגם היכרות עם הרובעים השונים וטעימה מההיסטוריה </a></p>
+			</div>
+			<span data-datetime="1630328460000"><span class="time"> זמן קריאה: </span>8<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-a076d12a0a92421004.htm?sCh=fae025e732e7f110&pId=25483675" data-title="מידע שימושי על ברצלונה" data-description="מזג אוויר, טיסות, תחבורה וגם היכרות עם הרובעים השונים וטעימה מההיסטוריה ">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%9E%D7%99%D7%93%D7%A2+%D7%A9%D7%99%D7%9E%D7%95%D7%A9%D7%99+%D7%A2%D7%9C+%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-a076d12a0a92421004.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li><li class="hover">
+        	<div class="image_inside s304x186">
+		<a href="/travel-world/guides-barcelona/Article-e1328bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">
+		<img src="https://img.mako.co.il/2019/03/04/club_I_reduced.jpg" loading="lazy" width="304" height="186" alt="מועדון לילה בברצלונה (צילום: Miles Willis, GettyImages IL)" title="מועדון לילה בברצלונה (צילום: Miles Willis, GettyImages IL)">
+		</a>		<div class="corner_holder">
+			<div class="generic_trwhite"><div class="generic_brwhite"></div></div>
+		</div>
+	</div>
+	<div class="line-clamp">
+          		<h5><a href="/travel-world/guides-barcelona/Article-e1328bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">מסיבות, מועדונים וחיי הלילה בברצלונה</a></h5>
+          		<p><a href="/travel-world/guides-barcelona/Article-e1328bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675">דנס ברים מעודכנים, מועדונים מיוחדים ועוד המון הפתעות</a></p>
+			</div>
+			<span data-datetime="1553859600000"><span class="time"> זמן קריאה: </span>1<span class="time"> דק'</span></span><div class="social-share " data-share="facebook,twitter,whatsapp" data-url="//www.mako.co.il/travel-world/guides-barcelona/Article-e1328bc79043421006.htm?sCh=fae025e732e7f110&pId=25483675" data-title="מסיבות, מועדונים וחיי הלילה בברצלונה" data-description="דנס ברים מעודכנים, מועדונים מיוחדים ועוד המון הפתעות">
+				<a class="fancybox.ajax" data-network="email" href="/AjaxPage?jspName=neoSendToFriendForm.jsp&fromStatusBar=fromStatusBar&subject=%D7%9E%D7%A1%D7%99%D7%91%D7%95%D7%AA%2C+%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%A0%D7%99%D7%9D+%D7%95%D7%97%D7%99%D7%99+%D7%94%D7%9C%D7%99%D7%9C%D7%94+%D7%91%D7%91%D7%A8%D7%A6%D7%9C%D7%95%D7%A0%D7%94&sendURL=http%3A%2F%2Fwww.mako.co.il%2Ftravel-world%2Fguides-barcelona%2FArticle-e1328bc79043421006.htm%3FsCh%3Dfae025e732e7f110%26pId%3D25483675%26partner%3Dsend_to_friend" target="_blank"></a>
+			</div>
+    </li></ul>
+</div>
+<!-- form which holds the parameters to the ajax request -->
+<form id="liefArticleFlodding" name="liefArticleFlodding" action="/AjaxPage?jspName=liefArticleFloddingResponse.jsp">
+  <input type="hidden" name="callBackFunction" value="handleResponse_liefArticleFlodding"/>
+  <input type="hidden" name="page" value="1"/>
+  <input type="hidden" name="displayTarget" value="pagerDivFlodding"/>
+  <input type="hidden" name="containerTarget" value="liefArticleFlodding_div"/> 
+  <input type="hidden" name="formName" value="liefArticleFlodding"/>
+  <input type="hidden" name="maxToDisplay" value="17"/>
+  <input type="hidden" name="max" value="1"/>
+  <input type="hidden" name="channelId" value="fae025e732e7f110VgnVCM2000002a0c10acRCRD"/>
+  <input type="hidden" name="siteId" value="83485dd2dd5d4110VgnVCM100000290c10acRCRD"/>
+</form> 
+<script type="text/javascript">
+  	Lazy.js('https://rcs.mako.co.il/js/jPagerDigital.js',function(){
+  		ordPager.newDraw(1, 'liefArticleFlodding');
+  	});
+</script>
+<noscript>
+</noscript>
+<!-- the parameters for the paging -->
+<div style="display: none">
+	<page>1</page>
+	<formName>null</formName>
+	<max>1</max>
+</div>
+
+</div>
+
+<!-- Mako chrome (default) portlet chrome for הצפת תכנים לורטיקל או תת ורטיקל Lobby portlet - end --><div class="mako_main_portlet_container">
+</ul>
+</div>
+</div>
+
+<!-- Mako chrome (default) portlet chrome for free ordering no banner no channel portlet - end --><div class="mako_main_portlet_container">
+</div>
+
+<!-- Mako chrome (default) portlet chrome for GenericHTML portlet - end --><div class="mako_main_portlet_container">
+<div class="ad b970X90XC2C cm8">
+			<div id="CM8ShowAd_COAST2COAST1_970X90" data-title="COAST2COAST1_970X90">
+			<script>			
+				window.DFP && DFP.showBanner('COAST2COAST1','970X90');				
+			</script>
+			</div>
+		</div>
+</div>
+
+<!-- Mako chrome (default) portlet chrome for COAST2COAST1_970 portlet - end --><div class="mako_main_portlet_container">
+<div class="bottom_line_neo slider2">
+	<div class="special_box"  >
+		<div class="carousel default">
+			<div class="arrow"><span class="title">השורה התחתונה</span></div>
+    		<div class="prev"></div>
+    		<div class="jCarouselLite">
+				<ul class="bottom_line_neo scale_image" data-url="/AjaxPage?jspName=footerJSONresponse.jsp&orderingName=NewFooter&contentTypeName=Ordering&channelId=3d385dd2dd5d4110VgnVCM100000290c10acRCRD&max=20" data-pid="572239821">
+					<!-- 
+					<li class="item">
+						<a href="{link_href}" target="{link_target}" class="most_popular_item"><b><img src="{img_src}" alt="{img_alt}" width="139" height="80" /></b></a>
+						<a class="most_popular_title_neo" href="{link_href}" target="{link_target}">{title}</a>
+					</li>
+					-->
+				</ul>
+			</div>
+			<div class="next"></div>
+    		<div class="clear" ></div>  
+		</div>
+	</div>
+</div>
+
+</div>
+
+<!-- Mako chrome (default) portlet chrome for Mako Footer Neo portlet - end --></td></tr>
+</table><!-- end page content area -->
+				
+				</div>
+				<!--vgn-portal:includeStyle friendlyID="headerbackground"/-->
+				
+				<!-- no Footer Bottom Strip --><div class="helpful_all_footer_links">
+	<div class="helpful_footer_border"></div>
+	<table class="helpful_footer_links">
+						<tr>
+					<td class="makoFooterLinks">
+							
+									<span>מדורים</span><table class="all_helpfullinks">
+											<tr>  <td class="vertical_align_top">
+											<li ><a  href="https://www.n12.co.il/?Partner=footerLinks" target="_blank">N12</a></li>
+												<li ><a  href="http://www.mako.co.il/pzm?Partner=footerLinks" target="_blank">צבא וביטחון</a></li>
+												<li ><a  href="https://www.mako.co.il/men?Partner=footerLinks" >פלילים+</a></li>
+												<li ><a  href="/entertainment?Partner=footerLinks" >סלבס</a></li>
+												<li ><a  href="/culture?Partner=footerLinks" >תרבות</a></li>
+												<li ><a  href="/tvbee?Partner=footerLinks" target="_blank">TVbee</a></li>
+												<li ><a  href="/music?Partner=footerLinks" >מוזיקה</a></li>
+												<li ><a  href="/Sports?Partner=footerLinks" >ספורט</a></li>
+												<li ><a  href="https://www.mako.co.il/nexter?Partner=footerLinks" target="_blank">דיגיטל</a></li>
+												</td><td class="vertical_align_top"><li ><a  href="/food?Partner=footerLinks" >אוכל</a></li>
+												<li ><a  href="/women?Partner=footerLinks" >נשים</a></li>
+												<li ><a  href="http://www.mako.co.il/living?Partner=footerLinks" target="_blank">עיצוב הבית</a></li>
+												<li ><a  href="/home-family?Partner=footerLinks" >הורים</a></li>
+												<li ><a  href="/travel?Partner=footerLinks" >חופש</a></li>
+												<li ><a  href="https://www.mako.co.il/weekend?Partner=footerLinks" >מגזין סוף השבוע</a></li>
+												<li class = 'inner_ie8'><a  href="https://hitlist.mako.co.il/?Partner=footerLinks" target="_blank">היטליסט- המצעד הרשמי של ישראל</a></li>
+												<li ><a  href="/health?Partner=footerLinks" >בריאות</a></li>
+												<li ><a  href="/finances?Partner=footerLinks" >כסף</a></li>
+												</td><td class="vertical_align_top"><li ><a  href="http://fashionforward.mako.co.il/?partner=footerLinks&Partner=footerLinks" target="_blank">Fashion Forward</a></li>
+												<li ><a  href="http://www.mako.co.il/hix&partner=footerLinks&Partner=footerLinks" target="_blank">HIX</a></li>
+												<li ><a  href="/pride?Partner=footerLinks" >גאווה</a></li>
+												<li ><a  href="https://www.mako.co.il/special-freetv_mako/love_island_israel?Partner=footerLinks" >לאב איילנד</a></li>
+												<li ><a  href="https://www.mako.co.il/press_and_marketing?Partner=footerLinks" target="_blank">תקשורת ושיווק</a></li>
+												</ul></td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+</table>
+				<table class="helpful_footer_links">
+						<tr>
+					<td class="makoFooterLinks">
+							
+									<span>תכניות קשת 12</span><table class="all_helpfullinks">
+											<tr>  <td class="vertical_align_top">
+											<li ><a  href="/tv-comingsoon/Article-4f7f46b10dd3021004.htm?Partner=footerLinks" >לוח שידורים</a></li>
+												<li ><a  href="https://www.mako.co.il/mako-vod?Partner=footerLinks" >צפייה ישירה</a></li>
+												<li ><a  href="https://www.mako.co.il/mako-vod?Partner=footerLinks" >+12</a></li>
+												<li ><a  href="https://www.mako.co.il/tv-morning-news?Partner=footerLinks" >חדשות הבוקר</a></li>
+												<li ><a  href="https://www.mako.co.il/mako-vod-keshet/eretz_nehederet?Partner=footerLinks" target="_blank">ארץ נהדרת</a></li>
+												<li ><a  href="https://www.mako.co.il/tv-mkr_israel?Partner=footerLinks" >המטבח המנצח</a></li>
+												<li ><a  href="https://www.mako.co.il/tv-ninja_israel?Partner=footerLinks" >נינג'ה ישראל</a></li>
+												<li ><a  href="https://www.mako.co.il/mako-vod-keshet/sabri-maranan?Partner=footerLinks" >סברי מרנן</a></li>
+												<li class = 'inner_ie8'><a  href="https://www.mako.co.il/mako-vod-keshet/good-evening-with-guy-pines?Partner=footerLinks" >ערב טוב עם גיא פינס</a></li>
+												</td><td class="vertical_align_top"><li ><a  href="https://www.mako.co.il/tv-the-next-star?Partner=footerLinks" >הכוכב הבא</a></li>
+												<li ><a  href="https://www.mako.co.il/mako-vod-keshet/money_cab?Partner=footerLinks" >מונית הכסף</a></li>
+												<li ><a  href="/tv-erez-nehederet?Partner=footerLinks" >ארץ נהדרת</a></li>
+												<li ><a  href="/tv-ilana_dayan?Partner=footerLinks" >עובדה</a></li>
+												<li class = 'inner_ie8'><a  href="http://mediarequest.keshet-tv.com/?Partner=footerLinks" >פנייה לארכיון קשת</a></li>
+												<li class = 'inner_ie8'><a  href="/mako-vod-live-tv/VOD-6540b8dcb64fd31006.htm?Partner=footerLinks" target="_blank">ערוץ 12 בשידור ישיר</a></li>
+												</ul></td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+</table>
+				<table class="helpful_footer_links">
+						<tr>
+					<td class="makoFooterLinks">
+							
+									<span>שימושון</span><table class="all_helpfullinks">
+											<tr>  <td class="vertical_align_top">
+											<li ><a  href="https://www.mako.co.il/ninemonth-baby_names/boy_names?Partner=footerLinks" >שמות לבנים</a></li>
+												<li ><a  href="https://www.mako.co.il/ninemonth-baby_names/girl_names?Partner=footerLinks" >שמות לבנות</a></li>
+												<li ><a  href="/health-laboratory-tests/Article-d68a432b6267a41006.htm?Partner=footerLinks" >פענוח בדיקות דם</a></li>
+												<li ><a  href="https://www.mako.co.il/travel-israel/magazine/Article-8cfb2c8898caf71027.htm?Partner=footerLinks" >עומס בנתב"ג</a></li>
+												<li ><a  href="https://www.mako.co.il/help-terms-of-use/Article-d37908dd1674c11006.htm?Partner=footerLinks" >תנאי שימוש</a></li>
+												<li ><a  href="https://www.mako.co.il/help/Article-9446174b77b2a31006.htm?Partner=footerLinks" >כתבו לנו</a></li>
+												<li ><a  href="https://jobs.keshet-mediagroup.com/jobs?Partner=footerLinks" >דרושים</a></li>
+												<li ><a  href="https://acum.org.il/?Partner=footerLinks" >אקו"ם</a></li>
+												</ul></td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+</table>
+				<table class="helpful_footer_links">
+						<tr>
+					<td class="makoFooterLinks">
+							
+									<span>מיוחדים</span><table class="all_helpfullinks">
+											<tr>  <td class="vertical_align_top">
+											<li ><a  href="https://www.mako.co.il/travel-world/guides-uae/dubai?Partner=footerLinks" >מדריך דובאי</a></li>
+												<li ><a  href="https://www.mako.co.il/ninemonth-baby_names?Partner=footerLinks" >פירוש שמות</a></li>
+												<li ><a  href="http://www.mako.co.il/spirituality-popular_culture/Article-494842ff06e9431006.htm?Partner=footerLinks" >כניסת שבת</a></li>
+												<li ><a  href="https://twitter.com/mako_feed?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor&Partner=footerLinks" >מאקו ב-twitter</a></li>
+												<li ><a  href="https://www.facebook.com/keshet.mako?Partner=footerLinks" target="_blank">מאקו ב-facebook</a></li>
+												<li ><a  href="https://www.tiktok.com/@mako.israel?Partner=footerLinks" target="_blank">מאקו ב-tiktok</a></li>
+												<li class = 'inner_ie8'><a  href="https://www.instagram.com/mako.il/?Partner=footerLinks" target="_blank">מאקו ב-instagram</a></li>
+												<li ><a  href="https://www.youtube.com/@makoil9756?Partner=footerLinks" >מאקו ב-youtube</a></li>
+												<li class = 'inner_ie8'><a  href="https://www.activetrail.co.il/mako/?utm_source=mako&utm_medium=NavBar_HP&utm_campaign=Newsletter&Partner=footerLinks" >הניוזלטירים שלנו</a></li>
+												</ul></td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+</table>
+				<table class="helpful_footer_links">
+						<tr>
+					<td class="makoFooterLinks last">
+							
+									<span>קניות והטבות</span><table class="all_helpfullinks">
+											<tr>  <td class="vertical_align_top">
+											<li ><a  href="https://www.holidayfinder.co.il/?utm_source=mako&utm_medium=nav_bar&utm_campaign=Holiday_finder&Partner=footerLinks" >Holiday finder</a></li>
+												<li class = 'inner_ie8'><a  href="https://easy.co.il/?Partner=footerLinks" target="_blank">easy - חיפוש עסקים</a></li>
+												<li ><a  href="/special?Partner=footerLinks" >מבצעים</a></li>
+												<li ><a  href="http://www.mako-publishers.com?Partner=footerLinks" target="_blank">פרסמו אצלנו</a></li>
+												<li ><a  href="https://www.farbeyond.co.il/?Partner=footerLinks" target="_blank">רואים רחוק</a></li>
+												<li ><a  href="https://www.mako.co.il/Tagit/%D7%99%D7%95%D7%A7%D7%A8+%D7%94%D7%9E%D7%97%D7%99%D7%94?Partner=footerLinks" target="_blank">יוקר המחיה</a></li>
+												</ul></td>
+								</tr>
+								</table>
+								</td>
+							</tr>
+</table>
+				</div>
+<table cellspacing="0" cellpadding="0" border="0" dir="ltr" align="center" class="not_for_print">
+	<tr>
+		<td class="footer_logos_text"><a class="eshkolot" href="https://eshkolot.co.il" target="_blank"></a></td>
+		<td class="footer_credit_space"></td>
+		<td class="footer_logos_text"><a class="casttime" href="http://casttime.com/" target="_blank"></a></td>
+		<td class="footer_credit_space"></td>
+		<td class="footer_logos_text"><a class="binat" href="http://www.bynetsoft.co.il" target="_blank"></a></td>
+		<td class="footer_credit_space"></td>
+		<td class="footer_logos_text"><a class="akum" href="http://www.acum.org.il/" target="_blank"></a></td>
+		<td class="footer_credit_space"></td>
+		<td class="footer_logos_text"><a class="copyrights"></a></td>
+	</tr>
+</table>	
+
+</div>
+				</div>	
+				<div class="background_image">
+				<div class="generic_bg"></div>
+	<script>
+			Lazy.js('rcs@/js/genericBackground.js',function(){
+				genericBG('','false','');
+			});
+ 	</script></div>
+				<!--- Lazy part #2 -->
+<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+<script>var w = window, d = document;w.jQuery || d.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"><\/script>')</script>
+<script src="//rcs.mako.co.il/js/scripts/jquery-1.10.2.min.js"></script>
+<script src="//rcs.mako.co.il/js/scripts/jquery-migrate-1.2.1.min.js"></script>
+<script src="//rcs.mako.co.il/js/neo/jquery-ui.min.js"></script> 
+<script src="https://rcs.mako.co.il/combined/neoGenericBundle.js"></script>
+<script src="https://rcs.mako.co.il/js/neo/postLazy.js"></script><!-- Banner Writing Portlet-->
+				<script>
+writeAAMBScript(false);
+//setTimeout("ajaxCall()", 500);
+</script><!-- Banner Writing End -->
+				<!-- Load all rest of the formats -->
+				 
+				<div id="mkSync"></div> 
+<script>
+Lazy.js("rcs@/js/scripts/mako_ga.js");window.oMaKodem&&oMaKodem.sync&oMaKodem.sync(true);var isNewGA=true;window.makoFBinit();
+</script>
+<script src="https://rcs.mako.co.il/js/scripts/thirdParty.js" charset="utf-8"></script>
+
+<script>
+			if(currentChannelId=="b18a04870ceb5310VgnVCM2000002a0c10acRCRD" 
+					|| currentChannelId=="a8a3ddbd634e6310VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="b8e3cdcf53124410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="4dd8ed58288c6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="23fa3444bccc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="7ab876c796cc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="96a85ac28dcc6410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="8c377cbc0a38a310VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="f6b217757d02b410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="2d8ece65b1cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="aa66a725a0cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="03c5ce65b1cfd410VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="4caece3418897110VgnVCM1000005201000aRCRD"
+					|| currentChannelId=="de1c3e46457c3510VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="c44f38bf962ca510VgnVCM2000002a0c10acRCRD"
+					|| currentChannelId=="b998eefbad817510VgnVCM2000002a0c10acRCRD"){
+				window.isLinicomActive && (function(){
+					  var e=document.createElement('script');
+					  e.async=true; e.type='text/javascript';
+					  e.src=document.location.protocol+"null";
+					  var me = document.getElementsByTagName('script')[0];
+					  me.parentNode.insertBefore(e, me);
+					})();
+			}
+			else if(vcmidOfContent != currentChannelId)
+			{
+				window.isLinicomActive && (function(){
+				  var e=document.createElement('script');
+				  e.async=true; e.type='text/javascript';
+				  e.src=document.location.protocol+"//linicom.co.il/links/convert_94.js";
+				  var me = document.getElementsByTagName('script')[0];
+				  me.parentNode.insertBefore(e, me);
+				})();
+			}
+			else
+			{
+				window.isLinicomActive && (function(){
+					  var e=document.createElement('script');
+					  e.async=true; e.type='text/javascript';
+					  e.src=document.location.protocol+"//linicom.co.il/links/convert_10.js";
+					  var me = document.getElementsByTagName('script')[0];
+					  me.parentNode.insertBefore(e, me);
+				})();
+				
+			}
+		</script>
+	<script>
+		
+		window.isSekindoActive  && !document.querySelector('meta[name=shatap]') && (function(){
+			  	var e=document.createElement('script');
+			  	e.async=true; e.type='text/javascript';
+			 	e.src=document.location.protocol+"//live.sekindo.com/live/liveView.php?s=57225&subId=DEFAULT";
+			  	var me = document.getElementsByTagName('script')[0];
+			  	me.parentNode.insertBefore(e, me);
+			})();
+		</script>
+	<script>
+				bDebugBanner = true;
+				var currentUrl = window.location;
+				</script>
+				<script type="text/javascript">
+					var myImages=new Array();
+					var myIndex = 0;
+					function sendUrl4Statistic(url)
+					{
+						if (document.images) 
+						{
+							myImages[myIndex]=new Image;
+							myImages[myIndex].src=url;
+							myIndex++;
+						}
+						else
+						{
+							document.write('<IMG ALT="" BORDER="0" NAME="MYStatistics" WIDTH="1" HEIGHT="1" SRC="'+url+'">');
+						}
+					}
+					var replaceFrom = '&';
+					var replaceBy = "zzzzz";
+					var statsDomainName =  'https://stats.mako.co.il';
+					var statsDomainPrefix = statsDomainName; 
+					var currentUrl = location.href;
+					if(((currentUrl.indexOf("?sCh=") != -1) || (currentUrl.indexOf("&sCh=") != -1)) && ((currentUrl.indexOf("?pId=") !=1) || (currentUrl.indexOf("&pId=") !=-1))){
+							currentUrl = currentUrl.replace( new RegExp(replaceFrom,'g'), replaceBy);
+							sendUrl4Statistic(statsDomainName+'/ClicksStatistics/clickUrl.jsp?clickURL='+encodeURIComponent(currentUrl));
+					}
+					</script>
+				</body>
+				</html>
+			
